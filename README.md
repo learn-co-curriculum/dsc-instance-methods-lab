@@ -24,25 +24,11 @@ Define these classes and instance methods in the cells below
 
 ```python
 # Define Driver class here
-class Driver(object):
-    
-    def greeting(self):
-        return "Hey, how are you?"
-    
-    def ask_for_destination(self):
-        return "Where would you like to go today?"
 ```
 
 
 ```python
 # Define Passenger class here 
-class Passenger(object):
-    
-    def reply_greeting(self):
-        return "I am doing well! Thanks for picking me up today!"
-    
-    def in_a_hurry(self):
-        return "Punch it! They're on our tail!"
 ```
 
 ## Instantiate Instances and Practice Using Instance Methods
@@ -52,17 +38,17 @@ Start by instantiating two drivers and two passengers. Assign the drivers to the
 
 
 ```python
-daniel = Driver() # driver
-meryl = Driver() # driver
-niky = Passenger() # passenger
-terrance = Passenger() # passenger
+daniel = None # driver
+meryl = None # driver
+niky = None # passenger
+terrance = None # passenger
 ```
 
 Alright, we have our passengers and drivers! Now we need to put those instance methods to use. Try them out and assign the return values to the variables below. Let's have `daniel` greet his passenger, who is going to be `niky`. Assign the greeting to the variable, `polite_greeting`. Have `niky` respond by calling `in_a_hurry`, and assign the return value to the variable, `no_time_to_talk`.
 
 
 ```python
-polite_greeting = daniel.greeting()
+polite_greeting = None
 print(polite_greeting)
 ```
 
@@ -71,7 +57,7 @@ print(polite_greeting)
 
 
 ```python
-no_time_to_talk = niky.in_a_hurry()
+no_time_to_talk = None
 print(no_time_to_talk)
 ```
 
@@ -87,53 +73,39 @@ In the cells below, you'll create three different classes that represent animals
 
 ```python
 # create Lion class
-class Lion(object):
-    
-    def speak(self):
-        return "Roar"
 ```
 
 
 ```python
-class Tiger(object):
-    
-    def speak(self):
-        return "Meow"
+# create Tiger class
 ```
 
 
 ```python
-class Elephant(object):
-    
-    def speak(self):
-        return "woo-I'm-an-elephant!"
+# create Elephant class
 ```
 
 Now, in the cell below, create an instance of each animal. 
 
 
 ```python
-simba = Lion()
-tony = Tiger()
-dumbo = Elephant()
+simba = None
+tony = None
+dumbo = None
 ```
 
 Now, append each of them into the array `zoo` in the cell below.
 
 
 ```python
-zoo = []
-zoo.append(simba)
-zoo.append(tony)
-zoo.append(dumbo)
+zoo = None
 ```
 
 Now, loop through the `zoo` array and call print out the `.speak()` method for every animal in the zoo. 
 
 
 ```python
-for animal in zoo:
-    print(animal.speak())
+
 ```
 
     Roar
