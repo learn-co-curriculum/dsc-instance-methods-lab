@@ -1,13 +1,15 @@
 
-# Practice with Instance Methods
+# Instance Methods - Lab
 
 ## Introduction
 In the last lesson, we talked about instance methods -- what are they and how to define them. In this lab, we are going to put our new skills to the test and start writing our own instance methods on our classes.
 
 ## Objectives
 
-* Practice defining classes and instantiating instances of those classes
-* Practice defining instance methods and calling them
+You will be able to: 
+
+* Define classes and instantiate instances of those classes
+* Define and call instance methods
 
 ## Defining Classes and Instance Methods
 
@@ -52,17 +54,11 @@ polite_greeting = None
 print(polite_greeting)
 ```
 
-    Hey, how are you?
-    
-
 
 ```python
 no_time_to_talk = None
 print(no_time_to_talk)
 ```
-
-    Punch it! They're on our tail!
-    
 
 ## Extra Practice
 
@@ -102,16 +98,6 @@ zoo = None
 ```
 
 Now, loop through the `zoo` array and call print out the `.speak()` method for every animal in the zoo. 
-
-
-```python
-
-```
-
-    Roar
-    Meow
-    woo-I'm-an-elephant!
-    
 
 ## Summary
 In this lab, we practiced defining classes and instance methods. We then instantiated instances of our classes and used them to practice calling our instance methods. 
