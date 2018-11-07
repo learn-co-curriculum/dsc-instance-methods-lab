@@ -90,14 +90,14 @@ tony = None
 dumbo = None
 ```
 
-Now, append each of them into the array `zoo` in the cell below.
+Now, append each of them into the list `zoo` in the cell below.
 
 
 ```python
 zoo = None
 ```
 
-Now, loop through the `zoo` array and call print out the `.speak()` method for every animal in the zoo. 
+Now, loop through the `zoo` list and call print out the `.speak()` method for every animal in the zoo. 
 
 ## Summary
 In this lab, we practiced defining classes and instance methods. We then instantiated instances of our classes and used them to practice calling our instance methods. 
