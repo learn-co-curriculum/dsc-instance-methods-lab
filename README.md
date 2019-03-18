@@ -1,13 +1,15 @@
 
-# Practice with Instance Methods
+# Instance Methods - Lab
 
 ## Introduction
-In the last lesson, we talked about instance methods -- what are they and how to define them. In this lab, we are going to put our new skills to the test and start writing our own instance methods on our classes.
+In the last lesson, you learned more about instance methods -- what are they and how to define them. In this lab, you are going to flesh out the driver and passenger classes by writing your own instance methods on these classes.
 
 ## Objectives
 
-* Practice defining classes and instantiating instances of those classes
-* Practice defining instance methods and calling them
+You will be able to: 
+
+* Define classes and instantiate instances of those classes
+* Define and call instance methods
 
 ## Defining Classes and Instance Methods
 
@@ -46,7 +48,7 @@ class Passenger(object):
 ```
 
 ## Instantiate Instances and Practice Using Instance Methods
-Great! We've defined our classes and our instance methods. Now, in this section we are going to actually use them!
+Great! You've defined classes and instance methods. Now, in this section you're going to actually use them!
 
 Start by instantiating two drivers and two passengers. Assign the drivers to the variables `daniel` and `meryl` and assign the passengers to `niky` and `terrance`.
 
@@ -58,7 +60,7 @@ niky = Passenger() # passenger
 terrance = Passenger() # passenger
 ```
 
-Alright, we have our passengers and drivers! Now we need to put those instance methods to use. Try them out and assign the return values to the variables below. Let's have `daniel` greet his passenger, who is going to be `niky`. Assign the greeting to the variable, `polite_greeting`. Have `niky` respond by calling `in_a_hurry`, and assign the return value to the variable, `no_time_to_talk`.
+Alright, you have our passengers and drivers! Now you need to put those instance methods to use. Try them out and assign the return values to the variables below. Have `daniel` greet his passenger, who is going to be `niky`. Assign the greeting to the variable, `polite_greeting`. Have `niky` respond by calling `in_a_hurry`, and assign the return value to the variable, `no_time_to_talk`.
 
 
 ```python
@@ -67,7 +69,7 @@ print(polite_greeting)
 ```
 
     Hey, how are you?
-    
+
 
 
 ```python
@@ -76,7 +78,7 @@ print(no_time_to_talk)
 ```
 
     Punch it! They're on our tail!
-    
+
 
 ## Extra Practice
 
@@ -118,7 +120,7 @@ tony = Tiger()
 dumbo = Elephant()
 ```
 
-Now, append each of them into the array `zoo` in the cell below.
+Now, append each of them into the list `zoo` in the cell below.
 
 
 ```python
@@ -128,7 +130,7 @@ zoo.append(tony)
 zoo.append(dumbo)
 ```
 
-Now, loop through the `zoo` array and call print out the `.speak()` method for every animal in the zoo. 
+Now, loop through the `zoo` list and call print out the `.speak()` method for every animal in the zoo. 
 
 
 ```python
@@ -139,7 +141,7 @@ for animal in zoo:
     Roar
     Meow
     woo-I'm-an-elephant!
-    
+
 
 ## Summary
-In this lab, we practiced defining classes and instance methods. We then instantiated instances of our classes and used them to practice calling our instance methods. 
+In this lab, you practiced defining classes and instance methods. You then instantiated instances of our classes and used them to practice calling our instance methods. 
