@@ -99,5 +99,10 @@ zoo = None
 
 Now, loop through the `zoo` list and call print out the `.speak()` method for every animal in the zoo. 
 
+
+```python
+
+```
+
 ## Summary
 In this lab, you practiced defining classes and instance methods. You then instantiated instances of our classes and used them to practice calling our instance methods. 
