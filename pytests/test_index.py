@@ -1,13 +1,5 @@
-# library used to check working virtual environment
-import importlib
-# library used to write tests
 import pytest
-# import data from JN
 from ipynb.fs.full.index import *
-
-# tests to ensure correct environment is loaded
-def test_conda_environment_activated():
-    assert importlib.util.find_spec("obscure"), "It looks like you didn't 'conda activate learn-env' - try that then run the test again!"
 
 def test_instance_types():
     assert type(meryl) == type(Driver())
