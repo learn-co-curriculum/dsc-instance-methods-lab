@@ -8,8 +8,11 @@ In the last lesson, you learned more about instance methods -- what are they and
 
 You will be able to: 
 
-* Define classes and instantiate instances of those classes
-* Define and call instance methods
+* Compare instance methods and attributes
+* Define and call an instance method
+* Define instance attributes
+* Explain the self variable and its relation to instance objects
+* Create an instance of a class
 
 ## Defining Classes and Instance Methods
 
@@ -105,4 +108,4 @@ Now, loop through the `zoo` list and call print out the `.speak()` method for ev
 ```
 
 ## Summary
-In this lab, you practiced defining classes and instance methods. You then instantiated instances of our classes and used them to practice calling our instance methods. 
+In this lab, you practiced defining classes and instance methods. You then instantiated instances of your classes and used them to practice calling your instance methods. 
