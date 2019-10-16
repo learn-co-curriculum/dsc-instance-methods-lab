@@ -11,7 +11,7 @@ You will be able to:
 * Compare instance methods and attributes
 * Define and call an instance method
 * Define instance attributes
-* Explain the self variable and its relation to instance objects
+* Explain the `self` variable and its relation to instance objects
 * Create an instance of a class
 
 ## Defining Classes and Instance Methods
