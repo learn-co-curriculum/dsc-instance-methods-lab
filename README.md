@@ -2,38 +2,30 @@
 # Instance Methods - Lab
 
 ## Introduction
-In the last lesson, you learned more about instance methods -- what are they and how to define them. In this lab, you are going to flesh out the driver and passenger classes by writing your own instance methods on these classes.
+In the last lesson, you learned about instance methods -- what they are and how to define them. In this lab, you are going to flesh out the `Driver` and `Passenger` classes by writing your own instance methods for these classes.
 
 ## Objectives
 
-You will be able to: 
+In this lab you will: 
 
-* Compare instance methods and attributes
+* Create an instance of a class 
 * Define and call an instance method
-* Define instance attributes
-* Explain the `self` variable and its relation to instance objects
-* Create an instance of a class
 
-## Defining Classes and Instance Methods
 
-In this section, define two classes, `Driver`, `Passenger`. 
+## Define classes and instance methods
 
-In the `Driver` class, define the instance method `greeting` that returns the string `"Hey, how are you?"`. Then define the method `ask_for_destination`, which returns the string `"Where would you like to go today?"`. 
-
-In the `Passenger` class, define the instance method `reply_greeting` that returns the string `"I am doing well! Thanks for picking me up today!"`. Then define the method `in_a_hurry`, which returns the string `"Punch it! They're on our tail!"`. 
-
-Define these classes and instance methods in the cells below
+You will now define classes and associated instance methods in the cell below: 
     
-> **Remember:** *as we learned in the previous lesson, we need to define our instance methods with at least one argument (`self`) in order to call them on an instance object. Don't worry, we will learn more about this argument in a later lesson.*
+> **Remember:** *as we learned in the previous lesson, we need to define our instance methods with at least one argument (`self`) in order to call them on an instance object.*
+
+Define a class `Driver` with two instance methods: 
+
+- `greeting`: this should return the string `"Hey, how are you?"` 
+- `ask_for_destination`: this should return the string `"Where would you like to go today?"` 
 
 
 ```python
 # Define Driver class here
-```
-
-
-```python
-# Define Passenger class here 
 ```
 
 
@@ -49,6 +41,16 @@ class Driver(object):
         return "Where would you like to go today?"
 ```
 
+Define a class `Passenger` with two instance methods: 
+
+- `reply_greeting`: this should return the string `"I am doing well!"` 
+- `in_a_hurry`: this should return the string `"Punch it! They're on our tail!"`
+
+
+```python
+# Define Passenger class here 
+```
+
 
 ```python
 # __SOLUTION__ 
@@ -62,40 +64,34 @@ class Passenger(object):
         return "Punch it! They're on our tail!"
 ```
 
-## Instantiate Instances and Practice Using Instance Methods
-Great! You've defined classes and instance methods. Now, in this section you're going to actually use them!
+## Instantiate classes and methods
 
-Start by instantiating two drivers and two passengers. Assign the drivers to the variables `daniel` and `meryl` and assign the passengers to `niky` and `terrance`.
+Great! You've now defined classes and the associated instance methods. You will now actually use them: 
+
+Start by instantiating a driver and a passenger. Assign the driver to the variable `daniel` and assign the passenger to `niky`. 
 
 
 ```python
 daniel = None # driver
-meryl = None # driver
 niky = None # passenger
-terrance = None # passenger
 ```
 
 
 ```python
 # __SOLUTION__ 
 daniel = Driver() # driver
-meryl = Driver() # driver
 niky = Passenger() # passenger
-terrance = Passenger() # passenger
 ```
 
-Alright, you have our passengers and drivers! Now you need to put those instance methods to use. Try them out and assign the return values to the variables below. Have `daniel` greet his passenger, who is going to be `niky`. Assign the greeting to the variable, `polite_greeting`. Have `niky` respond by calling `in_a_hurry`, and assign the return value to the variable, `no_time_to_talk`.
+Alright, you have the passengers and drivers! Now you need to put those instance methods to use. Try them out and assign the return values to the variables below. 
+
+- Have `daniel` greet his passenger, who is going to be `niky`. Assign the greeting to the variable `polite_greeting` 
+- Have `niky` respond by calling `in_a_hurry()`, and assign the return value to the variable, `no_time_to_talk` 
 
 
 ```python
 polite_greeting = None
 print(polite_greeting)
-```
-
-
-```python
-no_time_to_talk = None
-print(no_time_to_talk)
 ```
 
 
@@ -110,6 +106,12 @@ print(polite_greeting)
 
 
 ```python
+no_time_to_talk = None
+print(no_time_to_talk)
+```
+
+
+```python
 # __SOLUTION__ 
 no_time_to_talk = niky.in_a_hurry()
 print(no_time_to_talk)
@@ -118,31 +120,20 @@ print(no_time_to_talk)
     Punch it! They're on our tail!
 
 
-## Extra Practice
+## Feel like doing more? 
 
-Now, let's have some extra practice creating classes, instantiating objects, and using instance methods. 
-
-In the cells below, you'll create three different classes that represent animals in a zoo--lions, tigers, and elephants.  Each animal should have a method, `speak`, which returns a string containing the sound they make (feel free have some fun with this--we don't know how to spell the sound an elephant makes any better than you do!). 
+In the cells below, you'll create three different classes that represent animals in a zoo -- lions, tigers, and elephants. Each animal should have a method, `speak()`, which returns a string containing the sound they make (feel free to have some fun with this -- we don't know how to spell the sound an elephant makes any better than you do!). 
 
 
 ```python
-# create Lion class
-```
+# Create Lion class
 
-
-```python
-# create Tiger class
-```
-
-
-```python
-# create Elephant class
 ```
 
 
 ```python
 # __SOLUTION__ 
-# create Lion class
+# Create Lion class
 class Lion(object):
     
     def speak(self):
@@ -151,7 +142,14 @@ class Lion(object):
 
 
 ```python
+# Create Tiger class
+
+```
+
+
+```python
 # __SOLUTION__ 
+# Create Tiger class
 class Tiger(object):
     
     def speak(self):
@@ -160,14 +158,21 @@ class Tiger(object):
 
 
 ```python
+# Create Elephant class
+
+```
+
+
+```python
 # __SOLUTION__ 
+# Create Elephant class
 class Elephant(object):
     
     def speak(self):
         return "woo-I'm-an-elephant!"
 ```
 
-Now, in the cell below, create an instance of each animal. 
+Now, in the cell below, create an instance of each animal: 
 
 
 ```python
@@ -184,7 +189,7 @@ tony = Tiger()
 dumbo = Elephant()
 ```
 
-Now, append each of them into the list `zoo` in the cell below.
+Now, add each of them into the list `zoo` in the cell below: 
 
 
 ```python
@@ -194,13 +199,10 @@ zoo = None
 
 ```python
 # __SOLUTION__ 
-zoo = []
-zoo.append(simba)
-zoo.append(tony)
-zoo.append(dumbo)
+zoo = [simba, tony, dumbo]
 ```
 
-Now, loop through the `zoo` list and call print out the `.speak()` method for every animal in the zoo. 
+Now, loop through the `zoo` list and call out the `.speak()` method for every animal in the zoo. Make sure you print this in order to see the output! 
 
 
 ```python
