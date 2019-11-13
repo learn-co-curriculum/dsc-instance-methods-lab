@@ -32,7 +32,7 @@ Define a class `Driver` with two instance methods:
 ```python
 # __SOLUTION__ 
 # Define Driver class here
-class Driver(object):
+class Driver:
     
     def greeting(self):
         return "Hey, how are you?"
@@ -55,7 +55,7 @@ Define a class `Passenger` with two instance methods:
 ```python
 # __SOLUTION__ 
 # Define Passenger class here 
-class Passenger(object):
+class Passenger:
     
     def reply_greeting(self):
         return "I am doing well! Thanks for picking me up today!"
@@ -134,7 +134,7 @@ In the cells below, you'll create three different classes that represent animals
 ```python
 # __SOLUTION__ 
 # Create Lion class
-class Lion(object):
+class Lion:
     
     def speak(self):
         return "Roar"
@@ -150,7 +150,7 @@ class Lion(object):
 ```python
 # __SOLUTION__ 
 # Create Tiger class
-class Tiger(object):
+class Tiger:
     
     def speak(self):
         return "Meow"
@@ -166,7 +166,7 @@ class Tiger(object):
 ```python
 # __SOLUTION__ 
 # Create Elephant class
-class Elephant(object):
+class Elephant:
     
     def speak(self):
         return "woo-I'm-an-elephant!"
